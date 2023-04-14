@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Kanit', sans-serif; 
+}
+
+body{
+    min-height: 200vh;
+}
+
+/* Empieza el Header */
+
+header{
+    background-color: rgba( 255, 255, 255, 0.5);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 15px 100px;
+}
+
+header .logo{
+    height: 90px;
+    position: relative; 
+    transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.6s;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background-color: rgba(27, 25, 25, 0.6);
+}
+
+header.sticky .logo, header.sticky ul li a{
+    color: white;
+}
+
+/* Termina el header */
+
+/* Primera section */
+
+.sec1{
+    background-image: url(heroimg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(255, 0, 255, 0.5);
+    background-blend-mode: soft-light;
+    display: flex;
+    flex-direction: column;
+}
+.sec1 h1{
+    color: white;
+    font-size: 60px;
+    width: 40%;
+    margin-top: 25vh;
+    margin-left: 150px;
+    margin-right: 10%;
+}
+.sec1 p{
+    color: white;
+    font-size: 20px;
+    margin-top: 1%;
+    margin-left: 150px;
+    margin-right: 55%;
+}
+.sec1 button{
+    color: fuchsia;
+    background-color: white;
+    padding: 15px;
+    margin-left: 150px;
+    width: 20%;
+    font-size: 15px;
+    border-radius: 7px;
+    border-style: none;
+    cursor: pointer;
+    margin-top: 2%;
+}
+.sec1 button:hover{
+    transition: .5s;
+    background-color: #000000;
+    color: white;
+}
+
+/* Termina Primera section */
+
+/* Empieza Segunda section */
+
+.sec2{
+    width: 100%;
+    height: 110vh;
+}
+
+.contitems{
+    display: flex;
+    justify-content:space-evenly;
+    margin-left: 140px;
+}
+
+.sec2 h1{
+    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+    color:fuchsia;
+}
+.sec2 img{
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(116, 21, 100, 0.6);
+}
+
+.sec2 h2{
+    color: fuchsia;
+}
+
+.contitems h2{
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 15%;
+    padding-bottom: 4%;
+}
+.contitems p{
+    font-size: 15px;
+    line-height: 30px;
+    color: black;
+}
+
+.item1 p{
+    margin-right: 40px;
+}
+
+.item2{
+    margin-left: 60px;
+}
+
+.item2 h2{
+    position: relative;
+}
+.item2 p{
+    position: relative;
+    margin-right: 60px;
+}
+
+.item3{
+    margin-left: 120px;
+}
+
+.sub3{
+    position: relative;
+    bottom: 20px;
+}
+
+.sub3{
+    margin-bottom: 20px;
+}
+
+.item3 p{
+    position: relative;
+    margin-right: 30px;
+}
+
+/* Termina Segunda section */
+
+/* Empieza Tercera section */
+
+.sec3{
+    height: 90vh;
+    display: flex;
+    background-color: #cf2bf0;
+}
+
+.about1{
+    width: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+.about1 h1{
+    font-size: 55px;
+    color:white;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 150px;
+}
+
+.about1 p{
+    color:white;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 160%;
+    margin-bottom: 30px;
+    margin-left: 150px;
+}
+
+.about2{     
+    display: flex;
+    justify-content: center;
+
+}
+
+.taza{
+    scale: 0.8;
+}
+
+/* Termina el Tercer Section */
+
+/* Empieza la Cuarta Section */
+
+.sec4{
+    background-color: white;
+    height: 100vh;
+}
+.sec4 h1{
+    color: #cf2bf0;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px
+}
+.sec4 h2{
+    color: #cf2bf0;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.textos{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.texto1, .texto2, .texto3{
+    text-align: center;
+    color: #000;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.texto1{
+    width: 250px;
+    margin-left: 40px;
+}
+.texto2{
+    width: 250px;
+}
+.texto3{
+    width: 250px;
+    margin-left: 25px;
+}
+
+/* Termina la Cuarta Section */
+
+/* Empieza el Quinto Section */
+
+.sec5{
+    width: 100%;
+    height: 120vh;
+    background-color: #cf2bf0;
+}
+
+.sec5 h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-parte1 {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label{
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+input[type="text"],input[type="email"],textarea {
+    padding: 20px;
+    height: 25px;
+    border: none;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.sec5 input:hover, textarea:hover{
+    background-color: #ffc4fc;
+}
+
+.name, .mail{
+    width: 250px;
+}
+
+.message{
+    height: 200px
+}
+
+button[type="submit"] {
+    background-color:white;
+    box-shadow: 0px 0px 10px rgb(161, 161, 161);
+    color: #cf2bf0;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 130px;
+    height: 50px;
+    width: 220px;
+    border-style: none;
+    cursor: pointer;
+    margin-left: 30vh; 
+}
+
+.sec5 button:hover{
+    transition: .3s;
+    background-color:black;
+    color: white;
+}
+
+/* Termina la Quinta Section */
+
+/* Empieza la Sexta Section */
+.sec6{
+    width: 100%;
+    height: 110vh;
+    background-color: white;
+}
+
+.sec6 h1{
+    padding: 40px;
+    text-align: center;
+    color: #cf2bf0;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.sec6 form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-parte2{
+    display: flex;
+    justify-content: space-between;
+}
+  
+.inputs2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.inputs2 label{
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #cf2bf0;
+}
+
+.inputs2 input[type="email"],textarea {
+    padding: 20px;
+    height: 25px;
+    border: none;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.mail2{
+    width: 250px;
+}
+
+.message2{
+    height: 200px
+}
+
+.sec6 input:hover, textarea:hover{
+    background-color: #ffc4fc;
+}
+
+.boton2{
+    display: flex;
+    justify-content: center;
+}
+
+.boton2 button[type="submit"] {
+    background-color: black;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    color: #cf2bf0;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 20px;
+    height: 50px;
+    width: 220px;
+    margin-right: 180px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.sec6 button:hover{
+    transition: .3s;
+    background-color: white;
+    color: #000;
+}
+/* Termina la Sexta Section */
+
+/* Empieza el footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 35vh;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+h3{
+    color: white;
+}
+
+.metpago img{
+    height: 25vh;
+}
+
+.redes ul{
+    list-style: none;
+}
+
+.redes ul li{
+    width: 50px;
+    height: 50px;
+}
+
+i{
+    color: white;
+    font-size: 5vh;
+}
+
+.redes ul li:hover .bi-instagram{
+    color: fuchsia;
+}
+.redes ul li:hover .bi-facebook{
+    color: #00aced;
+}
+.redes ul li:hover .bi-envelope-fill{
+    color: rgb(235, 235, 142);
+}
+
+/* Termina el footer */
